@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<head>
+	<title>Herbal Online Store SignIn</title>
+	<link rel="shortcut icon" type="image/png" href="green mint.png">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+	<link rel="stylesheet" type="text/css" href="SignIn.css">
+</head>
+<body>
+<!-- <div>
+<nav class="Ourclass-navinner">
+	<h1>Herbal Online Store</h1>
+	<img src="green mint.png" >
+    </nav>
+</div>
+ -->
+<body background="../background1.png">
+
+<!-- <h1 style="text-align:center; font-size:50px; color:#fff">Modal Popup Box Login Form</h1> -->
+
+<!-- <button onclick="document.getElementById('modal-wrapper').style.display='block'" style="width:200px; margin-top:200px; margin-left:160px;">
+Open Popup</button> -->
+
+<div id="modal-wrapper" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+        
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+      <img src="1.png" alt="Avatar" class="avatar">
+      <h1 style="text-align:center">Sign In</h1>
+    </div>
+
+    <div class="container">
+      <input type="text" placeholder="Enter Username" name="uname">
+      <input type="password" placeholder="Enter Password" name="psw">        
+      <button type="submit">Login</button>
+      <input type="checkbox" style="margin:26px 30px;"> Remember me      
+      <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
+    </div>
+    
+  </form>
+  
+</div>
+
+<script>
+// If user clicks anywhere outside of the modal, Modal will close
+
+var modal = document.getElementById('modal-wrapper');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<!-- <div>
+	<form action="action_page.php">
+  <div class="imgcontainer">
+    <img src="download.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1>
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</div> -->
+
+
+
+</body>
+</html>
+
+<!-- <div class="red">
+	<form style="float: right; margin: -45px 5px 0 0px;">
+	<b>Username:</b><input type="text" name="Username">
+	<b>Password:</b><input type="Password" name="Password" style=" margin: 10px 0 0 5px;">
+	
+</form>
+</div> -->
+
+<!-- <div id="id01" class="model1">
+        <form class="model1-content animate fm">
+            <div class="imgcontainer">
+                <span id="popup1" class="close" title="Close model1">&times;</span>
+                <img src="images\Login.png" alt="male" class="image">
+            </div>
+            <div class="container">
+                <label><b>E-mail</b></label>
+                <input type="email" placeholder="Enter Your E-mail" name="email" required>
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" id="myInput"><br><br>
+                <input type="checkbox" onclick="myFunction()">Show Password
+                <button type="submit">Login</button>
+                <input type="checkbox" checked="checked">Remember me</div>
+            <div class="container" style="background-color: #f1f1f1">
+                <button type="button" id="popup2" class=cancelbtn>Cancel</button>
+                <span class="psw">Forgot  <a href="#">Password?</a></span>
+            </div>
+        </form>
+    </div> -->
